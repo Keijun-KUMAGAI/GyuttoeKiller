@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "version": "1.1",
+  "name": "ぎゅっとe絶対殺すマン",
+  "icons": {
+    "16": "images/logo.png",
+    "48": "images/logo.png",
+    "128": "images/logo.png"
+  },
+  "description": "ぎゅっとeのあの憂鬱な待ち時間を無くします。",
+  "browser_action": {
+    "default_icon": {
+      "16": "images/logo.png",
+      "24": "images/logo.png",
+      "32": "images/logo.png"
+    },
+    "default_title": "GyuttoeKiller"
+  },
+  "content_scripts": [{
+    "matches": ["http://yaruzo2.gyuto-e.jp/nagoya-original/lesson/reading.do*"],
+    "js": ["./js/main.js"]
+  }]
+}
